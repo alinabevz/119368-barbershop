@@ -7,25 +7,22 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <div>
-          <a class="logo" href="#">Ссылка на главную страницу</a> <!-- будет обёрнута в логотип -->
-        </div>
         <nav class="main-navigation">
-          <ul class="list">
-            <li class="item">
-              <a href="#">Информация</a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link info" href="#">Информация</a>
             </li>
-            <li class="item">
-              <a href="#">Новости</a>
+            <li class="nav-item">
+              <a class="nav-link news" href="#">Новости</a>
             </li>
-            <li class="item">
-              <a href="#">Прайс-лист</a>
+            <li class="nav-item">
+              <a class="nav-link pricelist" href="#">Прайс-лист</a>
             </li>
-            <li class="item">
-              <a href="#">Магазин</a>
+            <li class="nav-item">
+              <a class="nav-link shop" href="#">Магазин</a>
             </li>
-            <li class="item">
-              <a href="#">Контакты</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -49,42 +46,46 @@
           </li>
         </ul>
       </nav>
-      <form>
-        <p>Производители</p>
-        <label>
-        Baxter of California <input type="checkbox" name="baxter" checked>
-        </label>
-        <label>
-        Mr Natty <input type="checkbox" name="natty">
-        </label>
-        <label>
-        Suavecito <input type="checkbox" name="suavecito" checked>
-        </label>
-        <label>
-        Malin+Goetz <input type="checkbox" name="malin">
-        </label>
-        <label>
-        Murray's <input type="checkbox" name="murray">
-        </label>
-        <label>
-        American crew <input type="checkbox" name="american" checked>
-        </label>
-        <p>Группы товаров:</p>
-        <label>
-        <input type="radio" name="product_category" value="shave">
-        Бритвенные принадлежности
-        </label>
-        <label>
-        <input type="radio" name="product_category" value="creams" checked>
-        Средства для ухода
-        </label>
-        <label>
-        <input type="radio" name="product_category" value="accessories">
-        Аксессуары
-        </label>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Производители</legend>
+          <label>
+          Baxter of California <input type="checkbox" name="baxter" checked>
+          </label>
+          <label>
+          Mr Natty <input type="checkbox" name="natty">
+          </label>
+          <label>
+          Suavecito <input type="checkbox" name="suavecito" checked>
+          </label>
+          <label>
+          Malin+Goetz <input type="checkbox" name="malin">
+          </label>
+          <label>
+          Murray's <input type="checkbox" name="murray">
+          </label>
+          <label>
+          American crew <input type="checkbox" name="american" checked>
+          </label>
+        </fieldset>
+        <fieldset>
+          <p>Группы товаров:</p>
+          <label>
+          <input type="radio" name="product_category" value="shave">
+          Бритвенные принадлежности
+          </label>
+          <label>
+          <input type="radio" name="product_category" value="creams" checked>
+          Средства для ухода
+          </label>
+          <label>
+          <input type="radio" name="product_category" value="accessories">
+          Аксессуары
+          </label>
+        </fieldset>
         <button type="submit" class="btn filter">ПОКАЗАТЬ</button>
       </form>
-      <div class="container">
+      <div class="catalog">
         <article class="product product1">
           <img src="http://placehold.it/150x100"> <!--вставить размеры картинок-->
           <p>Набор для путешествий  «Baxter of California»</p>
@@ -135,26 +136,26 @@
           </li>
           <li>
             <a href="#">4</a>
-          </li>
+          </li> 
         </ul>
       </nav>
     </main>
     <footer class="main-footer">
       <div class="container">
         <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
+          Барбершоп «Бородинский»
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+          <a class="contacts-link" href="#">Как нас найти?</a>
           Телефон: +7 (812) 666-02-66
         </section>
         <section class="footer-social">
-          <p>Давайте дружить!</p>
+          <p class="social-title">Давайте дружить!</p>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </section>
         <section class="footer-copyright">
-          <p>Разработано:</p>
+          <p class="copyright-title">Разработано:</p>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
